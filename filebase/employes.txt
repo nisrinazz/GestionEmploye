@@ -1,0 +1,4 @@
+Id,NomEmploye,Salaire,Poste,PrixHeure,NbrJrsTravail,NbrHeuresTravail,NbrJrsAbsence
+1,Nisrine,0.0,posteX,100.0,5,5,2
+2,Sanae,0.0,posteA,200.0,3,6,0
+3,Ahmed,0.0,posteC,400.0,5,8,5

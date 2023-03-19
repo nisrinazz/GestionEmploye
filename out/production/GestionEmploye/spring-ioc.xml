@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="dao" class="dao.dbFile.EmployeDaoFile">
+        </bean>
+        <bean id="metier" class="metier.EmployeMetier">
+        <property name="employeDao" ref="dao"/>
+        </bean>
+        <bean id="controlleur" class="presentation.EmployeControlleur">
+        <property name="service" ref="metier"/>
+        </bean>
+</beans>
